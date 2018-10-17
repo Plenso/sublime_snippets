@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+{if !isset(\$smarty.cookies.${1:DOMEIN}cookies)}
+  <div id="PLCookie">
+    <article>
+       <span>{translate(78)}</span>
+      <div>
+        <a href="/acceptCookie.php">Ok</a>
+        <a href="{generateURL("/gdpr")}#{translate(87)}">{translate(80)}</a>
+      </div>     
+    </article>
+  </div>
+
+
+  <script>
+    function sluitcookies() {	
+      \$.get("/?ajax=true&sluitcookies=true",function(data){
+        \$("#PLCookie").hide();
+      });
+    }
+  </script>
+{/if}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

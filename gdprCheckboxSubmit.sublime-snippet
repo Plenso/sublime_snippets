@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<div class="submitholder">
+	<input class="submit disabled" name="{\$submitkey}" disabled id="subm" type="submit" value="{translate(12)}" />
+	<span class="submit-warning"></span>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

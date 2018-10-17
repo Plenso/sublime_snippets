@@ -1,0 +1,63 @@
+<snippet>
+	<content><![CDATA[
+#content-container {
+  width: 96%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+#content-container h2 {
+  color:${1:MainColour}; 
+  font-size:2.4em; 
+  font-weight:bold; 
+  margin-bottom: 5px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+#content-container h3 {
+  color: #fff;
+  background-color: #3a3a3a;
+  padding: .6em;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 1em;
+}
+#content-container h3.active {
+  background-color: ${1:MainColour};
+}
+
+#content-container h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#content-container p {
+  margin-bottom: 2em;
+}
+
+#content-container ul {
+  margin-left: 1em;
+}
+
+#content-container table {
+  margin-left: 1em;
+}
+#content-container a {
+  color: #D3191C;
+}
+#content-container .c {
+  line-height: 150%;
+}
+#gdpr-wrapper {
+   min-height:100%;
+   position:relative;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

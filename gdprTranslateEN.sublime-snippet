@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\$vertalingen['en'][77] = "Privacy policy";
+\$vertalingen['en'][78] = "Cookies help us to improve your browsing experience.";
+\$vertalingen['en'][79] = "Ok";
+\$vertalingen['en'][80] = "More info";
+\$vertalingen['en'][81] = "I agree to accept the &nbsp;<a target='_blank' href='/en/gdpr#privacystatement'> privacy statement</a>";
+\$vertalingen['en'][82] = "Disclaimer";
+\$vertalingen['en'][83] = "Privacy statement";
+\$vertalingen['en'][84] = "Cookie statement";
+\$vertalingen['en'][85] = "disclaimer";
+\$vertalingen['en'][86] = "privacystatement";
+\$vertalingen['en'][87] = "cookiestatement";
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

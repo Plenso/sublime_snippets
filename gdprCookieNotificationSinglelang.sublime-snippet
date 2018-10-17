@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+{if !isset(\$smarty.cookies.meldingcookie)}
+        <div id="PLCookie">
+          <article>
+            <span>Wij werken met cookies om uw surfervaring te verbeteren</span>
+            <div>
+              <a href="/acceptCookie.php">Ok</a>
+              <a href="{generateURL("/gdpr/cookieverklaring-3")}">Meer info</a>
+            </div>      
+          </article>
+        </div>
+      {/if}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

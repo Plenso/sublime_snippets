@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<div class="siteby">
+	&copy; ${1:company} {\$smarty.now|date_format:'Y'} | 
+	<a href="{generateURL('/gdpr')}#{translate(85)}">{translate(82)}</a> | 
+	<a href="{generateURL('/gdpr')}#{translate(86)}">{translate(83)}</a> | 
+	<a href="{generateURL('/gdpr')}#{translate(87)}">{translate(84)}</a> | 
+	<a target="_blank" href="http://plenso.be">Site by Plenso</a>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

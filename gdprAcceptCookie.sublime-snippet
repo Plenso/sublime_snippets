@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+		<?php
+		setcookie("meldingcookie","ok",time() + (86400 * 365),"/");
+		header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+		header("Cache-Control: post-check=0, pre-check=0", false);
+		header("Pragma: no-cache");
+		header('location: ' . \$_SERVER['HTTP_REFERER']);
+		]]></content>
+		<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+		<!-- <tabTrigger>hello</tabTrigger> -->
+		<!-- Optional: Set a scope to limit where the snippet will trigger -->
+		<!-- <scope>source.python</scope> -->
+	</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+[module=contact]
+Identifier=${1:ID};
+Template=${2:Templ};
+Submit=${3:Subm};
+[/module]
+]]></content>
+	<tabTrigger>modcon</tabTrigger>	
+	<scope>text.html</scope>
+</snippet>

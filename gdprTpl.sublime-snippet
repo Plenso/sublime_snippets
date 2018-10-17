@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+[module=database]
+Identifier=${1:Identifier};
+Template=gdpr.database.tpl;
+Lang=true;
+[/module]
+]]>
+</content>
+<tabTrigger>Identifier</tabTrigger>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<div id="PL_privacy">
+    <label class="privcnt">
+        Ik ga akkoord met de &nbsp;<a target='_blank' href='/gdpr/privacystatement_2'>privacy statement</a>
+        <input type="checkbox" onchange="checkprivacy()" name="privacy" id="privacy">
+        <span class="checkmark"></span>
+    </label>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

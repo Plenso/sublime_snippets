@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+{foreach from = \$waardes item = waarde}
+${1:code}
+{/foreach}
+]]></content>
+	<tabTrigger>foreachsm</tabTrigger>	
+	<scope>text.html</scope>
+</snippet>

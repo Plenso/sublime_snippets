@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+[module=database]
+Identifier=${1:ID};
+Template=${2:Templ};
+Order=${3:Order};
+[/module]
+]]></content>
+	<tabTrigger>moddb</tabTrigger>	
+	<scope>text.html</scope>
+</snippet>

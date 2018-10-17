@@ -1,0 +1,59 @@
+<snippet>
+	<content><![CDATA[
+{function replaceChars}
+{\$data = html_entity_decode(\$data)}
+{\$charsToReplace = [ "à", "á", "â", "ã", "ä", "ă", "ç", "è", "é", "ê", "ë", "ì", "í", "î", "ï", "ñ", "ò", "ó", "ô", "õ", "ö", "ù", "ú", "û", "ü", "ý", "ÿ", "À", "Á", "Â", "Ã", "Ä", "Ç", "È", "É", "Ê", "Ë", "Ì", "Í", "Î", "Ï", "Ñ", "Ò", "Ó", "Ô", "Õ", "Ö", "Ù", "Ú", "Û", "Ü", "Ý", "ş", "ț", "ţ" ]}
+{\$replaceWith = [ "a", "a", "a", "a", "a", "a", "c", "e", "e", "e", "e", "i", "i", "i", "i", "n", "o", "o", "o", "o", "o", "u", "u", "u", "u", "y", "y", "A", "A", "A", "A", "A", "C", "E", "E", "E", "E", "I", "I", "I", "I", "N", "O", "O", "O", "O", "O", "U", "U", "U", "U", "Y", "s", "t", "t" ]}
+{str_replace(\$charsToReplace, \$replaceWith, \$data)|lower|replace:' ':''}{/function}
+
+<div id="content-container" style="margin-bottom: 100px;">
+	{foreach from=\$waardes item=waarde} 
+	<h2 id="{replaceChars data=\$waarde->Section_Title}">{\$waarde->Section_Title}</h2>
+	<div class="all-holder"><div>
+	{\$waarde->Section_Content|replace:"[[adres]]":\$gdpr['adres']|replace:"[[contact]]":generateURL("/contact")|replace:"[[naam]]":\$gdpr['naam']|replace:"[[url]]":\$gdpr['url']|replace:"[[email]]":\$gdpr['email']|replace:"<h3>":"</div><h3>"|replace:'</h3>':"</h3><div class='c'>"}
+	</div></div>
+	{/foreach}
+	<div style="clear: both;"></div>
+	</div>
+<script>
+	\$('#content-container .c').hide();
+	
+	\$('#content-container h2').on('click', function() {
+		var children = \$(this).next().children('h3');
+		if (children.next().is(':hidden')) {
+			children.addClass('active');
+			children.next().slideDown();
+		} else {
+			children.removeClass('active');
+			children.next().slideUp();
+		}
+	});
+	
+	\$('#content-container h3').on('click', function() {
+		if (\$(this).next().is(':hidden')) {
+			\$(this).addClass('active');
+			\$(this).next().slideDown();
+		} else {
+			\$(this).removeClass('active');
+			\$(this).next().slideUp();
+		}
+	});	
+	{if isset(\$smarty.get.page2)}
+	function gotop()
+	{
+		let offset = 10;
+		if (\$('#headerwrap').css("position")==="fixed") {
+			offset += \$('#headerwrap').outerHeight();
+		}
+		\$('html,body').animate({ scrollTop : \$('#{\$smarty.get.page2}').offset().top-offset },300);
+		\$('#{\$smarty.get.page2}').next(".all-holder").find('h3').addClass('active');
+		\$('#{\$smarty.get.page2}').next(".all-holder").find('.c').slideDown();
+	}
+	{/if}
+
+	\$(document).ready(function() {
+		{if isset(\$smarty.get.page2)}gotop();{/if}
+	});
+</script>
+]]></content>
+</snippet>

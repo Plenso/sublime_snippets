@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$SETTINGS['gdpr']['naam']  = "${1:companyName}";
+\$SETTINGS['gdpr']['adres'] = "${1:companyName}<br/>" .
+							 "${2:streetName}<br/>" .
+							 "${3:city}<br/>" .
+							 "België<br/>";
+\$SETTINGS['gdpr']['url']   = "www.${4:domain}.be";
+\$SETTINGS['gdpr']['email'] = \$SETTINGS["project"]["email"];
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
